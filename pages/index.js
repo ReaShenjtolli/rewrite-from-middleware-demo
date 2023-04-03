@@ -121,3 +121,14 @@ export default function Home() {
     </>
   )
 }
+
+export function getStaticProps() {
+
+  const id = "Test"
+
+  return {
+    props: {
+      id
+    }
+  }
+}

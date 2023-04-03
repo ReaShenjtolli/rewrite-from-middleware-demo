@@ -1,11 +1,24 @@
 import React from 'react'
 
-function Test() {
+function Test({id}) {
   return (
-    <div>Test
-        Demo for rewrite page
+    <div>
+      Test <br></br>
+      Demo for rewrite page 
+      {id}
     </div>
   )
 }
 
 export default Test
+
+export function getStaticProps() {
+
+  const id = "Test"
+
+  return {
+    props: {
+      id
+    }
+  }
+}
